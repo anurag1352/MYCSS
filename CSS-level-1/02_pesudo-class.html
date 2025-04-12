@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selector</title>
+
+    <style>
+
+        div{
+            width: 400px;
+            height: 300px;
+            border: 2px solid black;
+            padding: 40px;
+            background-color: aliceblue;
+        }
+
+        h1{
+            background-color: yellow;
+        }
+
+        .para{
+            background-color: beige;
+            
+            font-size: 15px;
+            font-weight: 700;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        ul li {
+        font-weight: 500;
+        }
+
+        .test{
+        text-align: center;
+        padding: 5px;
+        margin: 7px;
+        background-color: aquamarine;
+        border: 2px solid red;
+        border-radius: 5px;
+        font-size: 15px;
+        transition: 0.5s;
+        }
+
+        #btn-1:hover{
+            background-color: red;
+            color: yellow;
+        }
+
+        #focus:hover{
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div>
+        <h1>Pseudo Class Selector</h1>
+        <p class="para">A pseudo-class is used to define a special state of an element.</p>
+        <p class="para">For example, it can be used to:</p>
+        <ul>
+            <li>Style an element when a user mouses over it</li>
+            <li>Style visited and unvisited links differently</li>
+            <li>Style an element when it gets focus</li>
+        </ul>
+
+        <button class="test" id="btn-1">Mouse Over Me</button>
+        <input type="text" class="test" placeholder="Click Me To Get Focus" id="focus">
+    </div>
+</body>
+</html>

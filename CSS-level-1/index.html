@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        p{
+            color: red;
+            font-size: large;
+        }
+
+        h1{
+            background-color: dodgerblue;
+            color: whitesmoke;
+            padding: 10px;
+        }
+
+        table{
+            border: 10px solid black;
+        }
+
+        .green{
+            color: rgb(44, 238, 44);
+            background-color: black;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .blue{
+            color: blue;
+            background-color: beige;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .small{
+            font-size: small;
+        }
+
+        .large{
+            font-size: larger;
+        }
+        
+        #first-btn{
+            color: red;
+        }
+
+        #intro-para{
+            background-color: bisque;
+        }
+
+        #btn2{
+            background-color: red;
+            color: white;
+        }
+
+        #btn2:hover{
+            background-color: black;
+            color: yellow;
+        }
+
+        a:hover{
+            background-color: black;
+            color: white;
+            padding: 2px;
+        }
+
+        #h4{
+            text-shadow: 2px 2px 2px red;
+        }
+
+        div{
+            height: 150px;
+            width: 250px;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #org{
+            background-color: orange;
+        }
+
+        #wht{
+            background-color: white;
+        }
+        
+        #grn{
+            background-color: green;
+        }
+    </style>
+
+
+</head>
+<body>
+    <!-- Use for Element Selector  -->
+    <p>This is my first paragraph.</p>
+    <p>This is my second paragraph.</p>
+
+    <h1>This is my first Heading</h1>
+    <h1>This is my Second Heading</h1>
+
+    <table>
+       <tbody>
+        <tr>
+            <td>cell1</td>
+            <td>cell2</td>
+        </tr>
+       </tbody>
+    </table>
+
+     <!-- Use for Class Selector  -->
+    <p class="green">Paragraph 1</p>
+    <p class="green">Paragraph 2</p>
+    <p class="blue">Paragraph 3</p>
+
+    <h1 class="small">Heading 1</h1>
+    <h2 class="small">Heading 2</h2>
+    <h3 class="small">Heading 3</h3>
+
+    <h4 class="large">Heading 4</h4>
+    <h5 class="large">Heading 5</h5>
+    <h6 class="large">Heading 6</h6>
+
+        <!-- ID  -->
+    <button id="first-btn">Submit</button>
+
+    <!-- Pseudo Class  -->
+    <p id="intro-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laborum.</p>
+
+    <button id="btn2">Submit</button>
+    <br><br>
+    <a href="https://thecodehelp.in">Website pa Jao</a>
+
+      <!-- Inline CSS  -->
+       <h3 style="background-color: aqua; font-family: Arial, Helvetica, sans-serif;">I am Heading3 and use for Inline CSS</h3>
+
+        <!-- Internal CSS  -->
+         <h4 id="h4">This is heading h4</h4>
+
+       <!-- External CSS  -->
+        <!-- <div>
+            <h1 class="divMember">Heading of div</h1>
+            <p class="divMember">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, doloremque! Illum inventore blanditiis unde possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae soluta itaque, pariatur ratione laborum eligendi.
+            </p>
+        </div> -->
+
+        <!--BOX MODEL-->
+        <div class="box" id="org">A</div>
+        <div class="box" id="wht">B</div>
+        <div class="box" id="grn">C</div>
+
+</body>
+</html>

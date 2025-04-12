@@ -1,0 +1,10 @@
+div{
+    background-color: wheat;
+    border: 5px solid black;
+    font-size: large;
+}
+
+.divMember{
+    background-color: #000;
+    color: aliceblue;
+}

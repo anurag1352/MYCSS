@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selector</title>
+    <style>
+
+              /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Nested Selector */
+        ul li{
+            list-style: circle;
+            background-color: yellow;
+            color: magenta;
+            font-weight: bold;
+        }
+
+        /* Attribure Selector */
+        input{
+            margin-top: 10px;
+        }
+        
+        input::placeholder{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Other Selector</h1>
+    <ul>
+        <li>Universal Selector</li>
+        <li>Nested Selector</li>
+        <li>Attribure Selector</li>
+    </ul>
+    <input type="text" placeholder="Enter your Name:">
+</body>
+</html>

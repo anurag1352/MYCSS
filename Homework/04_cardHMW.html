@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+
+    <style>
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .conatiner{
+            width: 350px;
+            height: 330px;
+            padding: 15px;
+            margin: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        img{
+            width: 350px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        p{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 34px;
+            margin-bottom: 0;
+            margin-top: 5px;
+        }
+
+        hr{
+            width: 75%;
+            color: grey;
+            float: left;
+        }
+
+        #price{
+            color: rgb(102, 116, 204);
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 24px;
+            padding-right: 8px;
+        }
+
+        #real-price{
+            color: rgb(119, 124, 133);
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 24px;
+            padding-right: 8px;
+            text-decoration: line-through;
+        }
+
+        #offer{
+            background-color: #1DD1A1;
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 3px;
+            border-radius: 5px;
+            line-height: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="conatiner">
+        <a href="https://thecodehelp.in">
+        <img
+        src="https://codehelp.s3.ap-south-1.amazonaws.com/Web_Dev_670f900667.jpg"
+        alt="Course Image"/>
+        <p>Web Development Master Course @dot Batch</p>
+        <hr> <br>
+        <span id="price">&#8377;4500</span>
+        <span id="real-price">&#8377;6999</span>
+        <span id="offer">42% off</span>
+    </a>
+    </div>
+</body>
+</html>
