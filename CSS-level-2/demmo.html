@@ -4,53 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Radial Gradient</title>
+    <title>Exercise</title>
     <style>
       .box {
-        height: 200px;
-        width: 200px;
-        border: 2px solid red;
-        display: inline-block;
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient(#02314d, #00ffff, rgb(255, 0, 212), red);
+        color: aliceblue;
         font-weight: 900;
-        box-sizing: border-box;
-        margin: 5px;
+        font-size: 18px;
+        position: relative;
       }
 
-      #box1 {
-        background-image: radial-gradient(yellow, #126404);
+      #span1{
+        position: absolute;
+        top: 0;
+        left: 0;
       }
 
-      #box2 {
-        background-image: radial-gradient(circle, pink, blue);
-      }
-      #box3 {
-        background: radial-gradient(
-          circle at 100%,
-          #333,
-          #333 50%,
-          #eee 75%,
-          #333 75%
-        );
+      #span2{
+        position: absolute;
+        top: 0;
+        right: 0;
       }
 
-      #box4 {
-        background-image: radial-gradient(ellipse, #30abc2, #0fd31f);
+      #span3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
-      #box5 {
-        background-image: radial-gradient(ellipse,yellow 10%,red 20%,blue 40%,pink 50%);
+      #span4{
+        position: absolute;
+        bottom: 0;
+        left: 0;
       }
-    
+
+      #span5{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
     </style>
   </head>
   <body>
-    <h1>Radial Gradient</h1>
-
-    <div class="box" id="box1">Normal 2 Color Radial Gradient</div>
-    <div class="box" id="box2">Circle Two Color Radial Gradient</div>
-    <div class="box" id="box3"></div>
-    <div class="box" id="box4"></div>
-    <div class="box" id="box5"></div>
-
+    <h1>Exercise 1</h1>
+    <div class="box">
+      <span id="span1">span1</span>
+      <span id="span2">span2</span>
+      <span id="span3">span3</span>
+      <span id="span4">span4</span>
+      <span id="span5">span5</span>
+    </div>
   </body>
 </html>

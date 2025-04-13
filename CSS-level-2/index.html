@@ -13,9 +13,96 @@
             font-size: 18px;
             background-image: linear-gradient(to top, orange ,green);
         }
+
+        .mydiv{
+            border: 1px solid black;
+            margin: 10px;
+            height: 300px;
+            width: 300px;
+            background-image: radial-gradient(circle,red , white , yellow , green);
+            background-image: radial-gradient(yellow 10% , orange 20% , red 50%);
+        }
+        h1{
+            text-shadow: 3px 3px 3px red;
+            text-shadow: 3px 3px 3px red , 6px 6px 6px green;
+        }
+
+        .mybox{
+            max-height: 100px;
+            border: 1px solid black;
+        }
+        .content{
+            border: 1px solid black;
+            margin: 70px;
+            min-height: 100px;
+        }
+        .overflow{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+            overflow: scroll;
+        }
+        .trans{
+            background-color: aqua;
+            /* transform: translate(100px , 100px);
+            transform: rotate(45deg); */
+            transform: scale(2,3);
+            transform: skew(135deg);
+        }
+        .box2{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background-color: chartreuse;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+        #mybox3{
+            position: relative;
+            top: 100px;
+            left: 50px;
+        }
+        #mybox1{
+            position: fixed;
+        }
+        .wrapper{
+            height: 2000px;
+            width: 100vw;
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
+    <!-- Gradient -->
+
     <div class="box">this is linear Gradient</div>
+
+    <div class="mydiv">This is my Radial gradient</div>
+
+    <!-- shadow -->
+
+    <h1>This is my Headinh</h1>
+
+    <!-- CSS Dimension -->
+
+    <div class="mybox">Hello Bruh! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eius doloribus culpa aperiam cumque itaque porro in delectus quisquam? Autem ratione perspiciatis ipsum libero voluptates laboriosam quo, deleniti quibusdam eius! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut accusamus incidunt, autem placeat sequi molestias, magni laboriosam aperiam laborum perspiciatis pariatur sunt maxime blanditiis nesciunt voluptatum iste nostrum fugit? Itaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A esse voluptatibus aut, deleniti laudantium maiores, quae ratione explicabo nulla ipsam perspiciatis nesciunt ullam sit qui, exercitationem temporibus quis repellendus iste odit. Obcaecati praesentium voluptatum nam quo cumque, distinctio iure, eligendi rerum temporibus soluta necessitatibus quis sunt. Nostrum earum harum minus molestias at suscipit repudiandae corrupti tempora quidem sint placeat ea pariatur, laborum nihil odit, fugiat quaerat nisi repellat est veritatis nulla dolore. Dolorum magni corporis illum vel beatae repudiandae eaque, totam odit tempora repellendus accusamus id debitis, quam qui tempore! Pariatur modi, doloribus ea placeat molestiae dolore perspiciatis soluta minima.</div>
+
+    <div class="content">hello ji Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora culpa molestias modi dolor, aperiam veritatis repellat natus nobis ad nam facilis quisquam in quae? Aliquam saepe voluptatem libero facilis, impedit velit debitis dignissimos fugit enim exercitationem laudantium, optio labore, aut nihil necessitatibus quisquam magnam odio expedita numquam quibusdam placeat quam ea ducimus quaerat. Velit laborum similique deleniti consequatur impedit sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et explicabo sapiente provident beatae natus eligendi vitae ea asperiores consequuntur aliquid adipisci eaque, mollitia incidunt eveniet voluptas quas veritatis maiores eos quam similique quaerat vero voluptate. Ipsam minima similique vitae animi quod consequuntur mollitia ullam hic delectus veritatis, vel ut incidunt!</div>
+
+    <!-- overflow -->
+
+    <div class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, assumenda eum quod quidem obcaecati vero aspernatur neque sed voluptate in accusantium dolorum labore similique non saepe ad optio! At sapiente dicta laborum laboriosam quis, earum cumque eum, qui officiis autem sequi quia, molestiae vitae. Ad porro odit accusantium sunt nobis modi, natus eveniet. Labore, et illum nihil maiores a ut ad necessitatibus fugiat accusamus quam tempore, eligendi, vero inventore porro dolore minima doloribus rem dicta sit aut laboriosam magni? Itaque ullam qui error minus labore voluptas sapiente, velit ab magnam voluptatibus quas distinctio quam inventore obcaecati, eos adipisci iure! Rem?</div>
+
+    <!-- 2D-transform -->
+     <div class="trans">ABCD</div>
+
+     <!-- position -->
+      <div class="wrapper">
+      <div class="box2" id="mybox1">A</div>
+      <div class="box2" id="mybox2">B</div>
+      <div class="box2" id="mybox3">C</div>
+      <div class="box2" id="mybox4">D</div>
+    </div>
 </body>
 </html>
