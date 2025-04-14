@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .order{
+            height: 250px;
+            width: 350px;
+            border: 2px solid red;
+            background-color: aquamarine;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .order-item{
+            height: 70px;
+            width: 90px;
+            border: 2px solid blue;
+            background-color: aqua;
+        }
+        #item-1{
+            order: 1;
+        }
+        #item-2{
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order</h1>
+    <div class="order">
+        <div class="order-item" id="item-1">1</div>
+        <div class="order-item" id="item-2">2</div>
+        <div class="order-item" id="item-3">3</div>
+    </div>
+</body>
+</html>

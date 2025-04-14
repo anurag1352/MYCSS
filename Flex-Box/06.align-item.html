@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content{
+            height: 250px;
+            width: 350px;
+            border: 2px solid red;
+            background-color: aquamarine;
+            display: flex;
+
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: center;
+            align-items: stretch;
+            align-items: baseline;
+        }
+        .content-item{
+            height: 100px;
+            width: 60px;
+            border: 2px solid blue;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Align Items</h1>
+    <div class="content">
+        <div class="content-item">1</div>
+        <div class="content-item">2</div>
+        <div class="content-item">3</div>
+    </div>
+</body>
+</html>

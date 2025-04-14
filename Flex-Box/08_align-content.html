@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .align{
+            height: 250px;
+            width: 350px;
+            border: 2px solid red;
+            background-color: aquamarine;
+            display: flex;
+            flex-wrap: wrap;
+
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-around;
+            align-content: space-between;
+            align-content: space-evenly;
+        }
+        .align-item{
+            height: 70px;
+            width: 90px;
+            border: 2px solid blue;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Align Content</h1>
+
+    <div class="align">
+        <div class="align-item">1</div>
+        <div class="align-item">2</div>
+        <div class="align-item">3</div>
+        <div class="align-item">4</div>
+        <div class="align-item">5</div>
+        <div class="align-item">6</div>
+    </div>
+</body>
+</html>

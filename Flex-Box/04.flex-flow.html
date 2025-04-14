@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Flow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .flex-box{
+            height: 250px;
+            width: 350px;
+            border: 2px solid red;
+            background-color: aquamarine;
+            display: flex;
+
+            flex-flow: wrap-reverse row-reverse;
+        }
+        .flex-item{
+            height: 100px;
+            width: 100px;
+            border: 2px solid blue;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Flow</h1>
+    <h4>flex flow is shorthand property of flexDirection and flexWrap</h4>
+
+    <div class="flex-box">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+      </div>
+</body>
+</html>
