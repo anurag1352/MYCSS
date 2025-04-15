@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Row and Column</title>
+    <style>
+        .container{
+            height: 400px;
+            background-color: aqua;
+            display: grid;
+            text-align: center;
+            grid-template-rows: 30px 1fr 30px;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .box{
+            background-color: darkolivegreen;
+            color: white;
+            border: 3px solid black;
+        }
+        #header , #footer{
+            grid-column: 1/-1;
+        }
+        #content{
+            grid-column: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="header">Header</div>
+        <div class="box" id="menu">Menu</div>
+        <div class="box" id="content">Content</div>
+        <div class="box" id="sidebar">Sidebar</div>
+        <div class="box" id="footer">Footer</div>
+    </div>
+</body>
+</html>
