@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 700px;
+            height: 500px;
+            background-color: yellow;
+            display: grid;
+            text-align: center;
+            grid-template-areas: 
+            "hd hd hd hd"
+            "mn ct ct bl"
+            "ft ft ft ft";
+            gap: 5px;
+        }
+        .box{
+            background-color: #4291cf;
+            border: 2px solid red;
+        }
+        #header{
+            grid-area: hd;
+        }
+        #main{
+            grid-area: mn;
+        }
+        #content{
+            grid-area: ct;
+        }
+        
+        #footer{
+            grid-area: ft;
+        }
+
+        #blog{
+            grid-area: bl;
+            display: grid;
+            grid-template: repeat(2,1fr)/repeat(2,1fr);
+            padding: 5px;
+            gap: 5px;
+        }
+        .blog{
+            background-color: red;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            display: grid;
+            place-content: center;
+            place-items: center;
+            border: 2px solid yellow;
+        }
+
+        .blog:nth-child(1){
+            grid-row: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="header">Header</div>
+        <div class="box" id="main">Main</div>
+        <div class="box" id="content">Content</div>
+        <div class="box" id="blog">
+            <div class="blog">Study Blog</div>
+            <div class="blog">Buisness Blog</div>
+            <div class="blog">Sports Blog</div>
+        
+        </div>
+        <div class="box" id="footer">Footer</div>
+    </div>
+</body>
+</html>
