@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 4em;
+            width: 7em;
+
+            background-color: #444;
+            border-top: 5px solid orange;
+            border-radius: 0 0 0.2em 0.2em;
+
+            /* animation-name: move;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; */
+
+            animation: move 2s linear infinite;
+        }
+
+        .box:hover{
+            background-color: rgb(12, 0, 65);
+            transition: 1s;
+        }
+
+        @keyframes move {
+            0%,
+            7%{
+                transform: rotate(0deg);
+            }
+            15%{
+                transform: rotate(-15deg);
+                border-top-color: red;
+            }
+            25%{
+                transform: rotate(10deg);
+                border-top-color: yellow;
+            }
+            35%{
+                transform: rotate(-10deg);
+                border-top-color: green;
+            }
+            45%{
+                transform: rotate(6deg);
+                border-top-color: blue;
+            }
+            55%{
+                transform: rotate(-4deg);
+                color: white;
+            }
+            55%,
+            100%{
+                transform: rotate(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

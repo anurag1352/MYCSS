@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --dark-red:#981a2c;
+        }
+        .container{
+            border: 1px solid brown;
+            background-color: green;
+            height: 204px;
+            background-color: var(--dark-red);
+        }
+
+        .box{
+            border: 2px solid green;
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            /* margin: 20px;
+
+            transition: transform 3s ease-in-out; */
+            animation-name: animi;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            animation-direction: alternate;
+        }
+
+        /* .box:hover{
+            transform: translateX(500px);
+        } */
+
+        @keyframes animi{
+            0%{
+                width: 200px;
+                background-color: orange;
+            }
+            50%{
+                width: 35%;
+                background-color: white;
+            }
+            100%{
+                width: 100%;
+                background-color: green;
+            }
+        }
+
+        /* @keyframes animi{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 800px;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+    </div>
+</body>
+</html>
